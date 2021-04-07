@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_foot"
+            android:icon="@drawable/ic_baseline_sports_soccer_24"
+            android:title="@string/menu_foot" />
+        <item
+            android:id="@+id/nav_rugby"
+            android:icon="@drawable/ic_baseline_sports_rugby_24"
+            android:title="@string/menu_rugby" />
+        <item
+            android:id="@+id/nav_tennis"
+            android:icon="@drawable/ic_baseline_sports_tennis_24"
+            android:title="@string/menu_tennis" />
+        <item
+            android:id="@+id/nav_connexion"
+            android:icon="@drawable/ic_baseline_login_24"
+            android:title="@string/menu_connexion"
+            />
+    </group>
+</menu>

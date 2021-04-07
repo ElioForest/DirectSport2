@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_foot">
+
+    <fragment
+        android:id="@+id/nav_foot"
+        android:name="com.example.directsport.ui.foot.FootFragment"
+        android:label="@string/menu_foot"
+        tools:layout="@layout/fragment_foot" />
+
+    <fragment
+        android:id="@+id/nav_rugby"
+        android:name="com.example.directsport.ui.rugby.RugbyFragment"
+        android:label="@string/menu_rugby"
+        tools:layout="@layout/fragment_rugby" />
+
+    <fragment
+        android:id="@+id/nav_tennis"
+        android:name="com.example.directsport.ui.tennis.TennisFragment"
+        android:label="@string/menu_tennis"
+        tools:layout="@layout/fragment_tennis" />
+
+    <fragment
+        android:id="@+id/nav_connexion"
+        android:name="com.example.directsport.page_connexion"
+        android:label="@string/menu_connexion"
+        tools:layout="@layout/fragment_page_de_connexion" />
+</navigation>
