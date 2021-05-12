@@ -11,7 +11,8 @@
         <item
             android:id="@+id/nav_rugby"
             android:icon="@drawable/ic_baseline_sports_rugby_24"
-            android:title="@string/menu_rugby" />
+            android:title="@string/menu_rugby"
+            android:textColor="#FF0000"/>
         <item
             android:id="@+id/nav_tennis"
             android:icon="@drawable/ic_baseline_sports_tennis_24"
