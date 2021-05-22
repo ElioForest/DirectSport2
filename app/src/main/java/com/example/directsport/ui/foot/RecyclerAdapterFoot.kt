@@ -9,9 +9,6 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
 
-
-
-
 interface FootOnClickeListener{
     fun onClick()
 }
