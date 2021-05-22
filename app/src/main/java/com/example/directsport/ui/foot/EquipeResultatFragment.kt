@@ -6,17 +6,14 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.directsport.R
-import com.example.directsport.RecyclerAdapterFoot
+
 
 class EquipeResultatFragment : Fragment() {
 
-    //private lateinit var footEquipeViewModel: FootViewModel
     private var layoutManager2 : RecyclerView.LayoutManager?=null
     private var adapter2 : RecyclerView.Adapter<RecyclerAdapterFootResultat.ViewHolder>?=null
 
@@ -25,7 +22,7 @@ class EquipeResultatFragment : Fragment() {
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View?{
-        //footEquipeViewModel = ViewModelProvider(this).get(FootViewModel::class.java)
+
 
 
         val root = inflater.inflate(R.layout.fragment_resultat_equipe_foot, container, false)

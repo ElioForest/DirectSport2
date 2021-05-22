@@ -7,7 +7,7 @@ import androidx.lifecycle.ViewModel
 class RugbyViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "C'est ICI le RUGBY"
+        value = "Page Rugby"
     }
     val text: LiveData<String> = _text
 }

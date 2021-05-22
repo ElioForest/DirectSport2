@@ -1,24 +1,16 @@
 package com.example.directsport
 
-import android.util.Log
+
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentManager
-import androidx.navigation.Navigation.findNavController
-import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
-import com.example.directsport.ui.foot.EquipeCalendrierFragment
-import com.example.directsport.ui.foot.EquipeResultatFragment
-import java.util.*
 
 
-//data class ItemFoot(val name:String,val ville:String,val score:String)
+
+
 
 interface FootOnClickeListener{
     fun onClick()
@@ -26,10 +18,10 @@ interface FootOnClickeListener{
 class RecyclerAdapterFoot(val listener: FootOnClickeListener): RecyclerView.Adapter<RecyclerAdapterFoot.ViewHolder>() {
 
 
-    //private var list = listOf<ItemFoot>(ItemFoot("Saint-Etienne","Les verts","1"),ItemFoot("Lille","Lille","0"))
+
     private var titles1 = arrayOf("Saint-Etienne", "Lille", "Monaco", "Montpellier","Nice","Nime")
     private var titles2 = arrayOf("Lyon", "Marseille", "Paris", "Rennes","Angers","Dijon")
-    //private var titles3 = arrayOf("1-0", "0-1", "2-0", "0-1","0-0","1-1")
+
 
 
 

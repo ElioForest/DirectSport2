@@ -17,7 +17,7 @@ import com.example.directsport.FootOnClickeListener
 
 class FootFragment : Fragment(), FootOnClickeListener {
 
-    private lateinit var footViewModel: FootViewModel
+
     private var layoutManager : RecyclerView.LayoutManager?=null
     private var adapter : RecyclerView.Adapter<RecyclerAdapterFoot.ViewHolder>?=null
 
@@ -27,16 +27,13 @@ class FootFragment : Fragment(), FootOnClickeListener {
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
-       // footViewModel = ViewModelProvider(this).get(FootViewModel::class.java)
+
         val root = inflater.inflate(R.layout.fragment_foot, container, false)
 
 
         val textViewequipe: TextView = root.findViewById(R.id.textViewEquipe1)
 
         textViewequipe.setOnClickListener {
-            //val transaction = fragmentManager?.beginTransaction()
-            //transaction?.replace(R.id.nav_host_fragment, EquipeResultatFragment())
-            //transaction?.commit()
             findNavController().navigate(R.id.action_nav_foot_to_equipeResultatFragment)
         }
 

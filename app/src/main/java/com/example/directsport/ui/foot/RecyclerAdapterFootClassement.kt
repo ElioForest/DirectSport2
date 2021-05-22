@@ -6,22 +6,14 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentManager
+
 import androidx.recyclerview.widget.RecyclerView
-import com.example.directsport.ui.foot.EquipeCalendrierFragment
-import com.example.directsport.ui.foot.EquipeResultatFragment
-import java.util.*
 
 
-//data class ItemFoot(val name:String,val ville:String,val score:String)
 
-@Suppress("UNREACHABLE_CODE")
 class RecyclerAdapterFootClassement: RecyclerView.Adapter<RecyclerAdapterFootClassement.ViewHolder>() {
 
-    //private var list = listOf<ItemFoot>(ItemFoot("Saint-Etienne","Les verts","1"),ItemFoot("Lille","Lille","0"))
+
     private var titles1 = arrayOf("64-15","60-20","59-30","70-40","60-15","65-6","70-50")
     private var titles2 = arrayOf("80","78","76","76","73","71","4")
 

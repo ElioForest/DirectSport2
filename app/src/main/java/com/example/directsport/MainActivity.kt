@@ -30,8 +30,7 @@ class MainActivity : AppCompatActivity() {
         val navView: NavigationView = findViewById(R.id.nav_view)
         val navController = findNavController(R.id.nav_host_fragment)
 
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
+
         appBarConfiguration = AppBarConfiguration(setOf(
                 R.id.nav_foot, R.id.nav_rugby, R.id.nav_tennis, R.id.nav_connexion), drawerLayout)
         setupActionBarWithNavController(navController, appBarConfiguration)
@@ -39,7 +38,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        // Inflate the menu; this adds items to the action bar if it is present.
+
         menuInflater.inflate(R.menu.main, menu)
         return true
     }

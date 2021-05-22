@@ -6,15 +6,13 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.example.directsport.R
-import com.example.directsport.RecyclerAdapterFoot
-import com.example.directsport.ui.foot.EquipeResultatFragment
+
 
 class RecyclerAdapterFootResultat: RecyclerView.Adapter<RecyclerAdapterFootResultat.ViewHolder>() {
 
-    //private var list = listOf<ItemFoot>(ItemFoot("Saint-Etienne","Les verts","1"),ItemFoot("Lille","Lille","0"))
+
     private var titles1 = arrayOf("11.01", "17.01", "01.02", "07.02","17.02","23.02")
 
     private var images = intArrayOf(R.drawable.download_removebg_preview__1_, R.drawable.download_removebg_preview__1_, R.drawable.download_removebg_preview__1_,R.drawable.download_removebg_preview__1_, R.drawable.download_removebg_preview__1_, R.drawable.download_removebg_preview__1_)

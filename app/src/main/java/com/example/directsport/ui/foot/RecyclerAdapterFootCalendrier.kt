@@ -11,7 +11,7 @@ import com.example.directsport.R
 
 class RecyclerAdapterFootCalendrier: RecyclerView.Adapter<RecyclerAdapterFootCalendrier.ViewHolder>() {
 
-    //private var list = listOf<ItemFoot>(ItemFoot("Saint-Etienne","Les verts","1"),ItemFoot("Lille","Lille","0"))
+
     private var titles1 = arrayOf("12.05", "17.06")
 
     private var images = intArrayOf(R.drawable.download_removebg_preview__1_,R.drawable.download_removebg_preview__1_)
