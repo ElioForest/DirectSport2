@@ -8,9 +8,15 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.directsport.R
+import com.example.directsport.RecyclerAdapterFootClassement
 
 class EquipeClassementFragment  : Fragment()  {
+    private var layoutManager4 : RecyclerView.LayoutManager?=null
+    private var adapter4 : RecyclerView.Adapter<RecyclerAdapterFootClassement.ViewHolder>?=null
 
     override fun onCreateView(
             inflater: LayoutInflater,
@@ -19,8 +25,7 @@ class EquipeClassementFragment  : Fragment()  {
 
     ): View? {
         val root = inflater.inflate(R.layout.fragment_classement_equipe_foot, container, false)
-        val textView1: TextView = root.findViewById(R.id.textViewClassemenInfo)
-        textView1.text = "Page classement"
+
 
         val textViewResult1: TextView = root.findViewById(R.id.textViewresultat3)
         textViewResult1.text = "Résultats"
@@ -29,16 +34,18 @@ class EquipeClassementFragment  : Fragment()  {
         val textViewClassement1: TextView = root.findViewById(R.id.textViewclassement3)
         textViewClassement1.text = "Classement"
 
+        val recyclerfoot4: RecyclerView = root.findViewById(R.id.recyclerViewfooot4)
+        this.layoutManager4 = LinearLayoutManager(requireContext())
+        recyclerfoot4.layoutManager = this.layoutManager4
+        adapter4= RecyclerAdapterFootClassement()
+        recyclerfoot4.adapter = this.adapter4
+
         textViewCalendrier1.setOnClickListener {
-            val transaction = fragmentManager?.beginTransaction()
-            transaction?.replace(R.id.nav_host_fragment, EquipeCalendrierFragment())
-            transaction?.commit()
+            findNavController().navigate(R.id.action_equipeClassementFragment_to_equipeCalendrierFragment)
         }
 
         textViewResult1.setOnClickListener {
-            val transaction = fragmentManager?.beginTransaction()
-            transaction?.replace(R.id.nav_host_fragment, EquipeResultatFragment())
-            transaction?.commit()
+            findNavController().navigate(R.id.action_equipeClassementFragment_to_equipeResultatFragment)
         }
 
         return root
